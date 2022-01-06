@@ -1,0 +1,94 @@
+body {
+    margin: 50px;
+    padding: 20px;
+  }
+html {
+    background-image: url(images/brackground.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 100%;
+    font-family: "Space Mono", monospace;
+}
+
+
+#container {
+    height: 300px;
+    width: 400px;
+    background-color: #ffffff15;
+    margin: auto;
+    border-radius: 05%;
+    display: grid;  
+    padding: 1rem;
+}
+
+/*timers*/
+.label {
+    align-self: center;
+    justify-self: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#work {
+    grid-area: 1 / 2 / 1 / 2;
+}
+#break {
+    grid-area: 1 / 4 / 1 / 4;
+}
+
+
+.timer {
+    display: flex;
+    align-self: center;
+    justify-self: center;
+
+    font-size: 30px;
+    font-weight: bold;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+#counter {
+    grid-area: 2 / 3 / 2 / 3;
+    color: rgb(0, 120, 218);
+}
+
+#work-timer {
+    grid-area: 2 / 2 / 2 / 2;
+}
+
+#break-timer {
+    grid-area: 2 / 4 / 2 / 4;
+}
+
+/*buttons*/
+
+.btn {
+    align-self: center;
+    justify-self: center;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 10%;
+    background: #88f5f573;
+    text-transform: uppercase;
+    cursor: pointer;
+    width: 100px;
+    height: 50px;
+
+    font-size: 20px;
+}
+
+#start {
+    grid-area: 3 / 2 / 3 / 2;
+}
+
+#reset {
+    grid-area: 3 / 3 / 3 / 3;
+}
+
+#pause {
+    grid-area: 3 / 4 / 3 / 4;
+}
